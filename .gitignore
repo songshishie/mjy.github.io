@@ -1,0 +1,16 @@
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 日志文件
+*.log
+
+# 图片文件（根据需要添加）
+# images/*.jpg
+# images/*.png
