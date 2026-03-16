@@ -135,6 +135,7 @@ h2 {
     font-size: 1em;
     transition: all 0.3s ease;
     cursor: default;
+    text-decoration: none;
 }
 
 .tag:hover {
@@ -145,6 +146,11 @@ h2 {
 .interest-tag {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
+}
+
+.interest-tag:hover {
+    color: white;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
 .skill-tag {

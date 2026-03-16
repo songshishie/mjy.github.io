@@ -19,6 +19,8 @@
 ```bash
 # 将 <你的 Gitee 用户名> 替换为你的实际用户名
 git remote add origin https://gitee.com/<你的 Gitee 用户名>/my_website_tag.git
+@ma-jiayuan21
+git remote add origin https://gitee.com/ma-jiayuan21/my-web-tag.git
 
 # 推送代码到 Gitee
 git push -u origin master
