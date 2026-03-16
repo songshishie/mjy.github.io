@@ -17,21 +17,13 @@ my_website_tag/
 └── README.md           # 项目说明文档
 
 
+## 本地预览
+直接在浏览器中打开 `index.html` 文件即可预览。
 
 
 ## 部署说明
-
-### 本地预览
-直接在浏览器中打开 `index.html` 文件即可预览。
-
-### GitHub Pages 部署
-本项目已部署到 GitHub Pages：
-- 网址：https://songshishie.github.io/mjy.github.io/
-- GitHub 仓库：https://github.com/songshishie/mjy.github.io
-
-### Gitee 部署
-- Gitee 仓库：https://gitee.com/ma-jiayuan21/my-web-tag
-
+本项目已部署到 Github Pages
+网址为：https://songshishie.github.io/mjy.github.io/
 
 
 
@@ -49,7 +41,7 @@ my_website_tag/
 - 兴趣爱好：看小说、看直播、玩游戏
 - 技能特长：饭点会饿、饿了会找吃的、吃了会睡
 - 外部链接：https://gitee.com/ma-jiayuan21/my-web-tag
-           https://github.com/songshishie/mjy.github.io
+           https://github.com/songshishie/mjy.github.io/tree/master
 
 
 #AI辅助开发说明
