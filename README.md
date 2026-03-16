@@ -44,7 +44,11 @@ my_website_tag/
            https://github.com/songshishie/mjy.github.io/tree/master
 
 
-#AI辅助开发说明
+## 体现软件作品
+    点击"看小说"、"看直播"、"玩游戏"可以跳转到不同的网址
+
+    
+## AI辅助开发说明
 1、使用AI辅助开发
 2、使用智能体通义灵码、deepseek
 3、“搭建静态页面框架”、“帮我添加功能......”、“生成README.md”
