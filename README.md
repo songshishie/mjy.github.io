@@ -5,7 +5,7 @@
 这是一个个人数字名片页面，展示了马佳源的基本信息、兴趣爱好、技能特长等内容。
 
 ## 在线访问
-[点击这里访问在线页面](https://gitee.com/ma-jiayuan21/my-web-tag)
+[点击这里访问在线页面](https://songshishie.github.io/mjy.github.io/)
 
 
 ## 项目结构
@@ -22,7 +22,8 @@ my_website_tag/
 
 
 ## 部署说明
-本项目已部署到 Gitee Pages，可以通过上述在线访问链接查看。
+本项目已部署到 Github Pages
+网址为：https://songshishie.github.io/mjy.github.io/
 
 
 
@@ -40,6 +41,7 @@ my_website_tag/
 - 兴趣爱好：看小说、看直播、玩游戏
 - 技能特长：饭点会饿、饿了会找吃的、吃了会睡
 - 外部链接：https://gitee.com/ma-jiayuan21/my-web-tag
+           https://github.com/songshishie/mjy.github.io
 
 
 #AI辅助开发说明
