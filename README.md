@@ -22,8 +22,107 @@ my_website_tag/
 
 
 ## 部署说明
-本项目已部署到 Github Pages
-网址为：https://songshishie.github.io/mjy.github.io/
+
+### 本地预览
+直接在浏览器中打开 `index.html` 文件即可预览。
+
+### GitHub Pages 部署
+本项目已部署到 GitHub Pages：
+- 网址：https://songshishie.github.io/mjy.github.io/
+- GitHub 仓库：https://github.com/songshishie/mjy.github.io
+
+### Gitee 部署
+- Gitee 仓库：https://gitee.com/ma-jiayuan21/my-web-tag
+- 注意：Gitee Pages 服务已暂停，仅作为代码托管使用
+
+### 同时推送到 Gitee 和 GitHub
+
+#### 方法一：配置多个推送地址（推荐）
+
+1. **查看当前远程仓库配置**
+   ```bash
+   git remote -v
+   ```
+
+2. **为 origin 添加多个推送地址**
+   ```bash
+   # 先设置 origin 的拉取地址为 Gitee
+   git remote set-url origin https://gitee.com/ma-jiayuan21/my-web-tag.git
+   
+   # 添加 Gitee 推送地址
+   git remote set-url --add --push origin https://gitee.com/ma-jiayuan21/my-web-tag.git
+   
+   # 添加 GitHub 推送地址
+   git remote set-url --add --push origin https://github.com/songshishie/mjy.github.io.git
+   ```
+
+3. **验证配置**
+   ```bash
+   git remote -v
+   ```
+   应该看到：
+   - fetch 地址指向 Gitee
+   - push 地址有两个：Gitee 和 GitHub
+
+4. **使用方法**
+   ```bash
+   # 正常提交代码
+   git add .
+   git commit -m "更新内容"
+   
+   # 一次推送到两个平台
+   git push origin main
+   ```
+
+#### 方法二：使用 Git 钩子脚本
+
+1. **创建 post-commit 钩子**
+   在 `.git/hooks/post-commit` 文件中添加：
+   ```bash
+   #!/bin/sh
+   git push gitee main
+   git push github main
+   ```
+
+2. **配置两个 remote**
+   ```bash
+   git remote add gitee https://gitee.com/ma-jiayuan21/my-web-tag.git
+   git remote add github https://github.com/songshishie/mjy.github.io.git
+   ```
+
+3. **使用方法**
+   ```bash
+   git add .
+   git commit -m "更新内容"
+   # 自动推送到两个平台
+   ```
+
+#### 方法三：使用别名一键推送
+
+1. **配置 Git 别名**
+   ```bash
+   git config --global alias.pushall '!git push gitee main && git push github main'
+   ```
+
+2. **配置两个 remote**
+   ```bash
+   git remote add gitee https://gitee.com/ma-jiayuan21/my-web-tag.git
+   git remote add github https://github.com/songshishie/mjy.github.io.git
+   ```
+
+3. **使用方法**
+   ```bash
+   git add .
+   git commit -m "更新内容"
+   git pushall
+   ```
+
+### 注意事项
+
+1. **权限配置**：确保你已经在两个平台都配置了 SSH 密钥或保存了账号密码
+2. **分支名称**：确认两个仓库的主分支名称一致（main 或 master）
+3. **首次推送**：如果是新仓库，需要先用 `git push -u origin main` 设置上游分支
+4. **冲突处理**：如果某个平台推送失败，另一个平台仍会成功推送
 
 
 
